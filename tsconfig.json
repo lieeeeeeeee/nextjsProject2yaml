@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES2016", // Node.jsの互換性を考慮したターゲットバージョン
+      "module": "ES2020", // import.metaをサポートするためにES2020に変更
+      "moduleResolution": "node", // resolveJsonModuleとの互換性のため
+      "outDir": "./dist",   // コンパイル後のJSファイルの出力先
+      "rootDir": "./src",    // TypeScriptソースファイルのルート
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "declaration": true, // 型定義ファイル(.d.ts)も生成する
+      "sourceMap": true    // デバッグ用にソースマップを生成する
+    },
+    "include": ["src/**/*"], // コンパイル対象
+    "exclude": ["node_modules", "dist"] // コンパイル除外対象
+  }
